@@ -1,0 +1,156 @@
+/* ====== Global Styles ====== */
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.thumbnail {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+}
+
+/* ====== Chat Dialog Styles ====== */
+#dialog {
+    min-height: 600px;
+    max-height: 80vh;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.speech_item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9fafc;
+    border-left: 4px solid #4caf50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.speech_item img {
+    max-height: 300px;
+    display: block;
+    margin: 5px 0;
+}
+
+.triangle-isosceles {
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    color: #333;
+    background: #e3fcef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.triangle-isosceles:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #e3fcef transparent transparent transparent;
+}
+
+/* ====== User List Styles ====== */
+#userlist {
+    min-height: 600px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#userlist > h4 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#userlist > li {
+    list-style: none;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 4px;
+    background: #e3fcef;
+    color: #1372a2;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#userlist > li:hover {
+    background: #c8f7c5;
+}
+
+/* ====== Input and Buttons ====== */
+.textarea {
+    height: 6em;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.say-btn {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.say-btn .btn {
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin-left: 5px;
+}
+
+.say-btn .btn-default {
+    background: #4caf50;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.say-btn .btn-default:hover {
+    background: #388e3c;
+}
+
+/* ====== User Icon ====== */
+.user_icon {
+    float: left;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+/* ====== Footer ====== */
+.cp {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* ====== Responsive Styles ====== */
+@media (max-width: 768px) {
+    #dialog, #userlist {
+        min-height: 300px;
+    }
+
+    .textarea {
+        height: 4em;
+    }
+}

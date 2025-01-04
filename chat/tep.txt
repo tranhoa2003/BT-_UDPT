@@ -1,0 +1,75 @@
+PS Dworkshop2chat composer --version
+Composer version 2.7.9 2024-09-04 144328
+Run the diagnose command to get more detailed diagnostics output.
+PS Dworkshop2chat git clone httpsgithub.comwalkorworkerman-chat.git
+Cloning into 'workerman-chat'...
+remote Enumerating objects 3197, done.
+remote Counting objects 100% (4646), done.
+remote Compressing objects 100% (2424), done.
+remote Total 3197 (delta 21), reused 34 (delta 16), pack-reused 3151 (from 1)
+Receiving objects 100% (31973197), 1.89 MiB  4.09 MiBs, done.
+Resolving deltas 100% (16111611), done.
+PS Dworkshop2chat cd workerman-chat
+PS Dworkshop2chatworkerman-chat composer install
+
+No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See httpsgetcomposer.orginstall for more information.
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations 2 installs, 0 updates, 0 removals
+  - Locking workermanworkerman (v4.2.1)
+Writing lock file
+Package operations 2 installs, 0 updates, 0 removals
+  - Installing workermanworkerman (v4.2.1) Extracting archive
+  - Installing workermangateway-worker (v3.1.18) Extracting archive
+1 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Generating autoload files
+2 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+PS Dworkshop2chatworkerman-chat php start.php start
+
+start.php not support windows, please use start_for_win.bat
+PS Dworkshop2chatworkerman-chat .start_for_win.bat
+ 
+
+Dworkshop2chatworkerman-chatCHCP 65001 
+Active code page 65001
+
+Dworkshop2chatworkerman-chatphp ApplicationsChatstart_register.php ApplicationsChatstart_web.php ApplicationsChatstart_gateway.php ApplicationsChatstart_businessworker.php
+---------------------------------------------- WORKERMAN -----------------------------------------------
+Workerman version4.2.1          PHP version8.2.12
+----------------------------------------------- WORKERS ------------------------------------------------
+worker                                          listen                              processes   status
+Register                                        text127.0.0.11236               1           [ok]
+none                                            http0.0.0.055151                1           [ok]
+ChatGateway                                     websocket0.0.0.07272            1           [ok]
+ChatBusinessWorker                              none                                1           [ok]
+client127.0.0.159254 gateway127.0.0.17272  client_id7f00000108fc00000001 sessionnull onMessage{typelogin,client_namejjjj,room_id2}
+client127.0.0.159254 gateway127.0.0.17272  client_id7f00000108fc00000001 session{room_id2,client_namejjjj} onMessage{typesay,to_client_idall,to_client_name所有人,contenthgjg}
+client127.0.0.159254 gateway127.0.0.17272  client_id7f00000108fc00000001 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159254 gateway127.0.0.17272  client_id7f00000108fc00000001 session{room_id2,client_namejjjj} onMessage{typesay,to_client_idall,to_client_name所有人,contentvc}
+client127.0.0.159254 gateway127.0.0.17272  client_id7f00000108fc00000001 session{room_id2,client_namejjjj} onMessage{typesay,to_client_idall,to_client_name所有人,contentjgj[嘻嘻]}
+client127.0.0.159254 gateway127.0.0.17272  client_id7f00000108fc00000001 onClose''
+client127.0.0.159373 gateway127.0.0.17272  client_id7f00000108fc00000002 sessionnull onMessage{typelogin,client_namejjjj,room_id1}
+client127.0.0.159373 gateway127.0.0.17272  client_id7f00000108fc00000002 session{room_id1,client_namejjjj} onMessage{typesay,to_client_idall,to_client_name所有人,content.knn}
+client127.0.0.159373 gateway127.0.0.17272  client_id7f00000108fc00000002 onClose''
+client127.0.0.159407 gateway127.0.0.17272  client_id7f00000108fc00000003 sessionnull onMessage{typelogin,client_namejjjj,room_id3}
+client127.0.0.159407 gateway127.0.0.17272  client_id7f00000108fc00000003 session{room_id3,client_namejjjj} onMessage{typesay,to_client_idall,to_client_name所有人,content x x}
+client127.0.0.159407 gateway127.0.0.17272  client_id7f00000108fc00000003 onClose''
+client127.0.0.159430 gateway127.0.0.17272  client_id7f00000108fc00000004 sessionnull onMessage{typelogin,client_namejjjj,room_id4}
+client127.0.0.159430 gateway127.0.0.17272  client_id7f00000108fc00000004 onClose''
+client127.0.0.159442 gateway127.0.0.17272  client_id7f00000108fc00000005 sessionnull onMessage{typelogin,client_namejjjj,room_id1}
+client127.0.0.159442 gateway127.0.0.17272  client_id7f00000108fc00000005 onClose''
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 sessionnull onMessage{typelogin,client_namejjjj,room_id2}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typesay,to_client_idall,to_client_name所有人,contentdcscs}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}
+client127.0.0.159451 gateway127.0.0.17272  client_id7f00000108fc00000006 session{room_id2,client_namejjjj} onMessage{typepong}

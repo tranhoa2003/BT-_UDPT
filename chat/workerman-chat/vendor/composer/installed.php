@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'workerman/workerman-chat',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '1b9d7e06beb0be7b043b6973ee2bf2db44ca74df',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'workerman/gateway-worker' => array(
+            'pretty_version' => 'v3.1.18',
+            'version' => '3.1.18.0',
+            'reference' => '8d371770cb0dbd8166b94d6049a6a497c13476df',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../workerman/gateway-worker',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'workerman/workerman' => array(
+            'pretty_version' => 'v4.2.1',
+            'version' => '4.2.1.0',
+            'reference' => 'cafb5a43d93d7d30a16b32a57948581cca993562',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../workerman/workerman',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'workerman/workerman-chat' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '1b9d7e06beb0be7b043b6973ee2bf2db44ca74df',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

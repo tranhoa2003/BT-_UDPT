@@ -1,0 +1,16 @@
+{
+    "name"  : "workerman/workerman-chat",
+    "type"  : "project",
+    "keywords": ["chat"],
+    "homepage": "https://www.workerman.net",
+    "license" : "MIT",
+    "require": {
+        "workerman/gateway-worker" : "^v3.0.23||^4.0.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "./Applications/Chat/"
+        }
+    }
+}
